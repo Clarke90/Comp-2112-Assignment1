@@ -1,0 +1,47 @@
+      body{
+          background-image: url("img/wallpaper.jpg");
+          background-size: cover;
+          background-position: center;
+          height: 200%;
+        }
+        .container{
+          max-width: 80%;
+          margin:0 auto;
+          background: rgba(0, 0, 0, 0.5);
+          padding-bottom: 6%;
+        }
+        .navbar{
+          margin-top: 5%;
+          background-color: #1A2F5D;
+        }
+        .jumbotron {
+        background-image: url("img/banner.jpg");
+        height: 350px;
+         margin-bottom: 0;
+        }
+        #preFooter {
+          padding-top: 25px;
+          background: #114D8B;
+          color: wheat;
+          font-size: 80%;
+          text-align: center;
+          margin-top: 5%;
+          font-weight: 500;
+        }
+        #catagories{
+          margin-bottom: 5%;
+          background:#eeeeee;
+        }
+        #hatRow{
+             background:#eeeeee;
+        }
+        #shoppingCart{
+          background-color: white;
+        }
+        span{
+          color: red;
+        }
+        button#removeBtn {
+          border: 2px solid;
+          margin: 0 0 10px 10px;
+      }

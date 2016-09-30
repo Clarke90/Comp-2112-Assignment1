@@ -1,0 +1,195 @@
+<!-- 
+Chad Clarke
+Student# 100138630
+Advanced Client-Side Scripting 
+Comp2112
+Assignment 1 
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+    <meta charset="uft-8">
+    <!--latest rendering mode -->
+    <meta http-equiv="X-UA-Conpatible" content="IE-edge" />
+    <title>Assignment 1</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="container">
+        <img src="css/img/jaysLogo.png">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">All Items</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="">Login</a></li>
+                        <li><a href="">Register</a></li>
+                        <li><a href="">Shop</a></li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+            <!--/.container-fluid -->
+        </nav>
+        <div class="jumbotron">
+            <a class="btn btn-lg btn-primary" href="#shoppingCart" role="button">View your cart &raquo;</a>
+            </p>
+        </div>
+        <div class="row" id="catagories">
+            <div class="col-lg-4 text-center" class="catagoriesRow">
+                <h2>Mens</h2>
+                <img id="catagoryImg" src="css/img/BallCapTwo.jpg" height="130">
+                <p><span>$54.99 CAD</span></p>
+                <!-- Add to Cart Button  -->
+                <div class="add">
+                    <form>
+                        <button method="POST">Add to Cart</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center" class="catagoriesRow">
+                <h2>Womens</h2>
+                <img id="catagoryImg" src="css/img/BallCapTwo.jpg" height="130">
+                <p><span>$54.99 CAD</span></p>
+                <!-- Add to Cart Button  -->
+                <div class="add">
+                    <form>
+                        <button method="POST">Add to Cart</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center" class="catagoriesRow">
+                <h2>Childrens</h2>
+                <img id="catagoryImg" src="css/img/BallCapTwo.jpg" height="130">
+                <p><span>$54.99 CAD</span></p>
+                <!-- Add to Cart Button  -->
+                <div class="add">
+                    <form>
+                        <button method="POST">Add to Cart</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row" id="hatRow">
+                <div class="col-lg-3 text-center">
+                    <h2>2016 Authentic Collection Special Edition ...</h2>
+                    <img id="catagoryImg" src="css/img/BallCapTwo.jpg" height="130">
+                    <p><span>$54.99 CAD</span></p>
+                    <!-- Add to Cart Button  -->
+                    <div class="add">
+                        <form>
+                            <button method="POST">Add to Cart</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-3 text-center">
+                    <h2>2016 Authentic Collection 40th Season...</h2>
+                    <img id="catagoryImg" src="css/img/BallCapThree.jpg" height="150">
+                    <p><span>$54.99 CAD</span></p>
+                    <!-- Add to Cart Button  -->
+                    <div class="add">
+                        <form>
+                            <button method="POST">Add to Cart</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-3 text-center">
+                    <h2>2016 Authentic Collection Special Edition 9/11</h2>
+                    <img id="catagoryImg" src="css/img/BallCap.jpg" height="150">
+                    <p><span>$54.99 CAD</span></p>
+                    <!-- Add to Cart Button  -->
+                    <div class="add">
+                        <form>
+                            <button method="POST">Add to Cart</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-3 text-center">
+                    <h2>Authentic Collection New Era Alternate Cap ...</h2>
+                    <img id="catagoryImg" src="css/img/BallCapSix.jpg" height="150">
+                    <p><span>$54.99 CAD</span></p>
+                    <!-- Add to Cart Button  -->
+                    <div class="add">
+                        <form>
+                            <button method="POST">Add to Cart</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- shopping cart -->
+            <div id="shoppingCart">
+                <h1 class="text-center">Shopping Cart</h1>
+                <!-- Place html generated from script here  -->
+                <aside></aside>
+                <!-- remove from Cart Button  -->
+                <button onclick="removeFunction()">Remove From Cart</button>
+            </div>
+            <!-- footer  -->
+            <footer>
+                <div class="col-lg-12" text-center id="preFooter">
+                    <p>©2016 MLB ADVANCED MEDIA, L.P. ALL RIGHTS RESERVED</p>
+                    <p>THE FOLLOWING ARE TRADEMARKS OR SERVICE MARKS OF MAJOR LEAGUE BASEBALL ENTITIES AND MAY BE USED ONLY WITH PERMISSION OF MAJOR LEAGUE BASEBALL PROPERTIES, INC. OR THE RELEVANT MAJOR LEAGUE BASEBALL ENTITY: MAJOR LEAGUE, MAJOR LEAGUE BASEBALL, MLB, THE SILHOUETTED BATTER LOGO, WORLD SERIES, NATIONAL LEAGUE, AMERICAN LEAGUE, DIVISION SERIES, LEAGUE CHAMPIONSHIP SERIES, ALL-STAR GAME, AND THE NAMES, NICKNAMES, LOGOS, UNIFORM DESIGNS, COLOR COMBINATIONS, AND SLOGANS DESIGNATING THE MAJOR LEAGUE BASEBALL CLUBS AND ENTITIES, AND THEIR RESPECTIVE MASCOTS, EVENTS AND EXHIBITIONS.</p>
+                    <p>USE OF THE WEBSITE SIGNIFIES YOUR AGREEMENT TO THE TERMS OF USE AND PRIVACY POLICY (UPDATED JUNE 30, 2014).</p>
+                    <p><small>Learn more about the <a href="http://getbootstrap.com/css/#grid" title="View the Bootstrap documentation for the Grid">Bootstrap Grid System</a>.</small>
+                </div>
+            </footer>
+        </div>
+        <!-- end of container -->
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+        // Create form
+        var form = document.createElement('form')
+
+        var body = document.querySelector('aside')
+
+        var links = document.querySelectorAll('div.add')
+
+        for (var i = 0; i < links.length; i++) {
+            var link = links[i]
+            link.addEventListener('click', function(event) {
+
+                // handle event
+                event.preventDefault()
+                    // log for testing
+                console.log("Added to your cart!");
+                // generate a h4 tag 
+                var p = document.createElement("h4")
+                    // append this text inside of h4 tag
+                p.appendChild(document.createTextNode('2016 Authentic Collection 40th Season Special Edition Game Cap by New Era'))
+                body.appendChild(p)
+            })
+        }
+
+        // remove item from the cart 
+        function removeFunction() {
+            // get the element by its tag and remove it on click event 
+            document.getElementsByTagName("h4")[0].remove("h4");
+        }
+        </script>
+</body>
+
+</html>
